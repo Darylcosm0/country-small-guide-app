@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,5 +20,38 @@
         </a>
       </div>
     </nav>
+
+    <section id="search-filter">
+      <div class="section-wrapper">
+        <div class="search">
+          <i class="fas fa-search"></i>
+          <input
+            class="search-input"
+            id="search-input"
+            type="text"
+            placeholder="Search for a country..."
+          />
+        </div>
+        <div class="filter-dropdown">
+          <button class="dropbtn">
+            <span>Filter by Region</span>
+            <span><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="dropdown-content">
+            <div class="regions">
+              <a href="#" class="region">Africa</a>
+              <a href="#" class="region">America</a>
+              <a href="#" class="region">Asia</a>
+              <a href="#" class="region">Europe</a>
+              <a href="#" class="region">Oceania</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="countries"></section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
