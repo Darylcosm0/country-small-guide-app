@@ -1,0 +1,19 @@
+{
+  "name": "country-small-guide-app",
+  "version": "1.0.0",
+  "description": "creating a small search engine that gives country small info",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darylcosm0/country-small-guide-app.git"
+  },
+  "author": "Daryl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darylcosm0/country-small-guide-app/issues"
+  },
+  "homepage": "https://github.com/Darylcosm0/country-small-guide-app#readme"
+}
