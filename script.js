@@ -302,3 +302,19 @@ const  getRegionCountries = (region) => {
         console.log(error);
     })
 }
+
+//Get specific country (for Country Single Page)
+const getCountry = (name) => {
+
+    axios.get(`https://restcountries.com/v3.1/name/${name}`)
+    .then(function (response) {
+          
+        const countryData = response.data;
+
+        renderCountry(countryData);
+    
+    }).catch(function (error) {
+       
+        console.log(error);
+    })
+}
