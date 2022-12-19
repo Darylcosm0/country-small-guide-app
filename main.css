@@ -251,3 +251,36 @@ nav {
   box-shadow: var(--box-shadow);
   transition: all 0.5s ease-in;
 }
+@media only screen and (min-device-width: 480px) and (max-device-width: 850px) and (orientation: landscape) {
+  nav {
+    height: 6rem;
+  }
+
+  .nav-wrapper {
+    font-size: 12px;
+    margin: 0 2rem;
+  }
+
+  .section-wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 2rem;
+  }
+
+  .search {
+    min-width: 100%;
+  }
+
+  .search-input {
+    margin-bottom: 2rem;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .countries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin: 3rem;
+  }
+}
