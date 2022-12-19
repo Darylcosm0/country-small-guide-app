@@ -1,8 +1,9 @@
 # Title
-Country small guide app
+SMALL GUIDE COUNTRY WEBSITE.
+
 
 # project description
-
+Creating a website that user will be able to get small country information(population,region,capital and even display flag of that particular country you searched).Moreover, it can toggle color schemes between light mode and dark mode.
 # Getting started
 In order for you to use the content on this repo ensure you have the following:
 
@@ -51,9 +52,9 @@ Hurray! You are one step closer to being as intelligent as Einstein.
 
 
 # Author
-- Daryl
+- DARYL MUTAI
 
 # License
-This project is licenced by "ISC"and GMT.
+This project is licenced by "ISC"and GNU.
 
 
