@@ -214,3 +214,40 @@ nav {
 .card-body {
   padding: 1rem;
 }
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+.country-name {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+.primary-details ul > li,
+.secondary-details ul > li {
+  padding-bottom: 0.5rem;
+}
+.secondary-details {
+  margin-top: 4rem;
+}
+
+.border-countries {
+  display: flex;
+  align-items: center;
+  margin-left: 4.5rem;
+}
+.border-countries-label {
+  margin-right: 1rem;
+}
+.country-btn {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 2rem;
+  width: 6rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  background: var(--elements-color);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+  transition: all 0.5s ease-in;
+}
