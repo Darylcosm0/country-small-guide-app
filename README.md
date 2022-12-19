@@ -1,6 +1,6 @@
 # Title
-SMALL GUIDE COUNTRY WEBSITE.
-
+COUNTRIES SMALL GUIDE  WEBSITE.
+ 
 
 # project description
 Creating a website that user will be able to get small country information(population,region,capital and even display flag of that particular country you searched).Moreover, it can toggle color schemes between light mode and dark mode.
