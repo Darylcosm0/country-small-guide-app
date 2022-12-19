@@ -1,3 +1,49 @@
+//DOM Vars
+const iconToggle = document.getElementById('toggle-icon');
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+//Theme Vars
+const bgColor = '--bg-color';
+const txtColor = '--text-color';
+const elmntColor = '--elements-color';
+const inptColor = '--input-color';
+const boxShadow = '--box-shadow';
+let darkMode = true;
+
+
+const refresh =  () =>  {    
+    setTimeout(() => {
+        window.location.reload();
+    }, 50);
+}
+
+const switchToLightMode  = () => {
+    document.documentElement.style.setProperty(bgColor, 'hsl(0, 0%, 98%)');
+    document.documentElement.style.setProperty(txtColor, 'hsl(200, 15%, 8%)');
+    document.documentElement.style.setProperty(elmntColor, 'hsl(0, 0%, 100%)');
+    document.documentElement.style.setProperty(inptColor, 'hsl(0, 0%, 52%)');
+    document.documentElement.style.setProperty(boxShadow,'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;');
+    iconToggle.classList.remove('fas');
+    iconToggle.classList.add('far');
+    localStorage.setItem('isDark', 'no');
+    darkMode = false;
+ 
+};
+
+const switchToDarkMode  = () => {
+    document.documentElement.style.setProperty(bgColor, 'hsl(207, 26%, 17%)');
+    document.documentElement.style.setProperty(txtColor, 'hsl(0, 0%, 100%)');
+    document.documentElement.style.setProperty(elmntColor, 'hsl(209, 23%, 22%)');
+    document.documentElement.style.setProperty(inptColor, 'hsl(0, 0%, 100%)');
+    document.documentElement.style.setProperty(boxShadow,'none');
+
+    iconToggle.classList.remove('far');
+    iconToggle.classList.add('fas');
+    localStorage.setItem('isDark', 'yes');
+    darkMode = true;
+ 
+};
+
 //On darkMode icon Click
 darkModeToggle.addEventListener('click', e => {
     darkMode ? switchToLightMode() :  switchToDarkMode();
@@ -274,6 +320,8 @@ const renderCountry = country => {
             </div>`;
        
 }
+
+
 //API REQUESTS 
 //Get all countries
 const getAllCountries = () => {
@@ -288,7 +336,24 @@ const getAllCountries = () => {
         console.log(error);
     })
 }
- //Get countries by region
+ 
+
+//Get specific country
+const getSpecificCountry = (name) => {
+    axios.get(`https://restcountries.com/v3.1/name/${name}`)
+    .then(function (response) { 
+        const countriesData = response.data;
+
+        renderCountries(countriesData);
+    
+    }).catch(function (error) {
+       
+        console.log(error);
+    })
+}
+  
+ 
+//Get countries by region
 const  getRegionCountries = (region) => {
     axios.get(`https://restcountries.com/v3.1/region/${region}`)
     .then(function (response) {
@@ -302,6 +367,9 @@ const  getRegionCountries = (region) => {
         console.log(error);
     })
 }
+
+
+
 
 //Get specific country (for Country Single Page)
 const getCountry = (name) => {
@@ -317,4 +385,37 @@ const getCountry = (name) => {
        
         console.log(error);
     })
+}
+
+//Get specific country by code (for Country Single Page)
+const getCountryByCode = (code) => {
+
+    axios.get(`https://restcountries.com/v3.1/alpha/${code.replace(/\"/g, "")}`)
+    .then(function (response) {
+          
+        const countryData = response.data;
+
+        renderCountry(countryData);
+    
+    }).catch(function (error) {
+       
+        console.log(error);
+    })
+}
+
+
+const CountryPageInit = () => {
+     
+    // console.log('Hello this is counrty page!!!');
+     const name = localStorage.getItem('country-name');
+     const code = localStorage.getItem('country-code');
+
+     
+  
+
+   //check if country page is redirected / reloade
+
+   (performance.navigation.type == performance.navigation.TYPE_RELOAD) 
+   ?  getCountryByCode(code): getCountry(name)
+   
 }
