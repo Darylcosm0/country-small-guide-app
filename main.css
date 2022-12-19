@@ -194,6 +194,7 @@ nav {
   border-radius: 5px;
   border: 1px solid transparent;
   height: 20rem;
+  border-radius: 50%;
   box-shadow: var(--box-shadow);
 }
 .card-img {
@@ -317,6 +318,7 @@ nav {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
     margin: 3.5rem;
+    border-radius: 50%;
   }
 
   .country {
