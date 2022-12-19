@@ -14,7 +14,12 @@ A computer that runs on either of the following; (Windows 7+, Linux, Mac OS) nod
     - index.html
     - script.js
     - main.js
-    
+# Built with
+- HTML5
+- CSS (Grid, flexbox and custom properties)
+- Vanilla JS (local storage, Arrow functions, Promises etc)
+  
+
     # installation
     To use this repo on your machine requires some simple steps
 
@@ -38,6 +43,12 @@ A computer that runs on either of the following; (Windows 7+, Linux, Mac OS) nod
 (Alternate Option) Open it in any editor of your choice.
 
 Hurray! You are one step closer to being as intelligent as Einstein.
+
+# What I learned
+- Performing JS logic in JS template literals
+- Custom routing
+- CSS tricks like multiple class selectors
+
 
 # Author
 - Daryl
