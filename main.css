@@ -214,6 +214,41 @@ nav {
 .card-body {
   padding: 1rem;
 }
+
+.card-title {
+  padding-bottom: 1rem;
+  transition: all 0.5s ease-in;
+}
+
+/* Single Country page styling */
+.back-btn {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 2rem;
+  width: 6rem;
+  padding: 0.5rem;
+  background: var(--elements-color);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+}
+
+.back-btn span:first-child {
+  margin-right: 4px;
+}
+
+.country {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3rem;
+}
+
+.country-image img {
+  width: 80%;
+  /* height: 20vh; */
+  /* height: 10rem; */
+  object-fit: contain;
+}
+
 .details {
   display: flex;
   justify-content: space-around;
@@ -251,6 +286,87 @@ nav {
   box-shadow: var(--box-shadow);
   transition: all 0.5s ease-in;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 700px) {
+  nav {
+    height: 6rem;
+  }
+
+  .nav-wrapper {
+    font-size: 12px;
+    margin: 0 2rem;
+  }
+
+  .section-wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 2rem;
+  }
+
+  .search {
+    min-width: 100%;
+  }
+
+  .search-input {
+    margin-bottom: 2rem;
+    width: 100%;
+    min-width: 100%;
+  }
+  .countries {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    margin: 3.5rem;
+  }
+
+  .country {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 3rem 2rem;
+  }
+
+  .country-image img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .details {
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem 0;
+  }
+
+  .border-countries {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0rem;
+  }
+
+  .border-countries-label {
+    margin: 0 0 1rem 0;
+  }
+  .country-btn {
+    width: 4rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 350px) {
+  .nav-wrapper {
+    font-size: 10px;
+    margin: 0 1rem;
+  }
+
+  .countries {
+    margin: 3rem;
+  }
+
+  .country-btn {
+    width: 3rem;
+    margin-right: 0.5rem;
+  }
+}
+/* Mobile Landscape */
 @media only screen and (min-device-width: 480px) and (max-device-width: 850px) and (orientation: landscape) {
   nav {
     height: 6rem;
@@ -284,6 +400,8 @@ nav {
     margin: 3rem;
   }
 }
+
+/* ----------- iPad  ----------- */
 /* Portrait  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
   .countries {

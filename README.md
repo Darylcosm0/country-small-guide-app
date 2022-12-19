@@ -1,6 +1,8 @@
 # Title
 Country small guide app
 
+# project description
+
 # Getting started
 In order for you to use the content on this repo ensure you have the following:
 
@@ -23,15 +25,15 @@ A computer that runs on either of the following; (Windows 7+, Linux, Mac OS) nod
 
 - git clone:
 
-    git@github.com:Darylcosm0/country-small-guide-app.git
+        git@github.com:Darylcosm0/country-small-guide-app.git
 
 - change directory to the repo folder:
 
-  cd country-small-guide-app
+        cd country-small-guide-app
 
 - (Optional) Open it in Visual Studio Code
 
-    code .
+            code .
 
 (Alternate Option) Open it in any editor of your choice.
 
@@ -41,6 +43,6 @@ Hurray! You are one step closer to being as intelligent as Einstein.
 - Daryl
 
 # License
-this project is licenced by "ISC"
+This project is licenced by "ISC"and GMT.
 
 
