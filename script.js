@@ -274,3 +274,18 @@ const renderCountry = country => {
             </div>`;
        
 }
+//API REQUESTS 
+//Get all countries
+const getAllCountries = () => {
+    axios.get('https://restcountries.com/v3.1/all')
+    .then(function (response) {
+          
+        const countriesData = response.data;
+        renderCountries(countriesData);
+    
+    }).catch(function (error) {
+        // handle error
+        console.log(error);
+    })
+}
+ 
