@@ -288,4 +288,17 @@ const getAllCountries = () => {
         console.log(error);
     })
 }
- 
+ //Get countries by region
+const  getRegionCountries = (region) => {
+    axios.get(`https://restcountries.com/v3.1/region/${region}`)
+    .then(function (response) {
+          
+        const countriesData = response.data;
+        
+        renderCountries(countriesData);
+    
+    }).catch(function (error) {
+       
+        console.log(error);
+    })
+}
