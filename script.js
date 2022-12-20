@@ -1,8 +1,8 @@
-//DOM Vars
+//the dom variables
 const iconToggle = document.getElementById('toggle-icon');
 const darkModeToggle = document.getElementById('dark-mode-toggle');
 
-//Theme Vars
+//themes variables
 const bgColor = '--bg-color';
 const txtColor = '--text-color';
 const elmntColor = '--elements-color';

@@ -45,6 +45,10 @@ A computer that runs on either of the following; (Windows 7+, Linux, Mac OS) nod
 
 Hurray! You are one step closer to being as intelligent as Einstein.
 
+# Running the application
+
+- on your vs code, open it with live server to display the website.
+
 # What I learned
 - Performing JS logic in JS template literals
 - Custom routing
@@ -55,6 +59,6 @@ Hurray! You are one step closer to being as intelligent as Einstein.
 - DARYL MUTAI
 
 # License
-This project is licenced by "ISC"and GNU.
+- This project is licenced by "ISC"and GNU.
 
 
