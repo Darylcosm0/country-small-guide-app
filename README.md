@@ -48,7 +48,8 @@ Hurray! You are one step closer to being as intelligent as Einstein.
 # Running the application
 
 - on your vs code, open it with live server to display the website.
-
+# link to live server
+        https://country-small-guide-app.vercel.app/
 # What I learned
 - Performing JS logic in JS template literals
 - Custom routing
